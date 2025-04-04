@@ -27,7 +27,7 @@ function App() {
 
       <div className="content">
         <Routes>
-          <Route path="/" element={<h1>Dashboard</h1>} />
+          <Route path="/" element={<h1>Welcome to React Dashboard</h1>} />
           <Route path={Userpath} element={<Propsexample />} />
         </Routes>
       </div>
