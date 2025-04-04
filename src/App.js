@@ -4,25 +4,31 @@ import Sidebardata from "./Sidebar";
 import Propsexample from "./pages/props";
 
 function App() {
+  let Userpath = "";
   return (
     <div className="App">
       <div className="sidebar-container">
         <ul className="nav-list">
-          {Sidebardata.map((i, index) => (
-            <li className="nav-item" key={index}>
-              <NavLink to={i.path} className={({ isActive }) => (isActive ? "active" : "")}>
-                <span>{i.title}</span>
-              </NavLink>
-            </li>
-          ))}
+          {Sidebardata.map((i, index) => {
+            Userpath = i.path;
+            return (
+              <li className="nav-item" key={index}>
+                <NavLink
+                  to={Userpath}
+                  className={({ isActive }) => (isActive ? "active" : "")}
+                >
+                  <span>{i.title}</span>
+                </NavLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
 
-      {/* Main Content */}
       <div className="content">
         <Routes>
           <Route path="/" element={<h1>Dashboard</h1>} />
-          <Route path="/props" element={<Propsexample />} />
+          <Route path={Userpath} element={<Propsexample />} />
         </Routes>
       </div>
     </div>

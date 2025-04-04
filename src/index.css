@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+}
+
+.sidebar-container {
+  width:250px;
+  height: 150vh;
+  background: #405cc2;
+  padding-top: 20px;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-item {
+  padding: 15px;
+  color: rgb(255, 255, 255);
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: white;
+  display: block;
+  font-family: cursive;
+  font-size: larger;
+}
+
+.nav-item a.active {
+  background: #1840d1;
+}
+  
+.content {
+  flex-grow: 1;
+  padding: 20px;
+}
