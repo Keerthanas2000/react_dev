@@ -1,4 +1,4 @@
-function Propsexample(props) {
+function propsexample(props) {
   return (
     <div>
       <h1> Hi {props.Mainpage}</h1>
@@ -8,5 +8,5 @@ function Propsexample(props) {
 }
 
 
-export default Propsexample;
+export default propsexample;
 

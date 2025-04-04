@@ -16,9 +16,10 @@
 
 .nav-item {
   padding-left: 15px;
-  padding-top: 15px;
+  padding-top: 20px;
   color: rgb(255, 255, 255);
   width: 94%;
+  height: 30%;
 }
 
 .nav-item a {
@@ -26,7 +27,9 @@
   color: rgb(0, 0, 0);
   display: block;
   font-family: cursive;
-  font-size: larger;
+  font-size: 20px;
+  font-weight: 520;
+  font-stretch: expanded;
 }
 
 .nav-item a.active {  

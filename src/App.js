@@ -1,7 +1,7 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Sidebardata from "./Sidebar";
-import Propsexample from "./pages/props";
+
 
 function App() {
   return (
@@ -11,9 +11,8 @@ function App() {
         <ul className="nav-list">
           {Sidebardata.map((i, index) => (
             <li className="nav-item" key={index}>
-          
               <NavLink
-                to={i.path} 
+                to={i.path}
                 className={({ isActive }) => (isActive ? "active" : "")}
               >
                 <span>{i.title}</span>
@@ -30,13 +29,12 @@ function App() {
           <Route path="/" element={<h1>Welcome to React Dashboard</h1>} />
           {/* The <Routes> component inside the .content div is responsible for handling the URL changes and rendering the corresponding components dynamically. */}
 
-
           {/* Dynamic Route Handling */}
           {Sidebardata.map((i, index) => (
             <Route
               key={index}
-              path={i.path} 
-              element={<Propsexample Mainpage={`Navigated to ${i.title}`} />}
+              path={i.path}
+              element={<i.component Mainpage={`Navigated to ${i.title}`} />}
             />
           ))}
         </Routes>
@@ -69,7 +67,7 @@ export default App;
 
 // ```jsx
 // let el = (
-//   <>  
+//   <>
 //     This is a fragment
 //     <h1>Welcome to React.js {name}</h1>
 //     <p>Welcome to React.js {name}</p>
@@ -262,7 +260,17 @@ export default App;
 
 // ---
 
+// conditional rendering
+
+// function Greeting({ isMorning }) {
+//   return <h2>{isMorning ? "Good Morning!" : "Good Evening!"}</h2>;
+// }
+
+// export default function App() {
+//   return <Greeting isMorning={true} />;
+// }
+
+// {hasMessages && <p>You have new messages!</p>}
+
 // ## Conclusion
 // Props are fundamental to React and allow you to pass dynamic data, functions, and even JSX elements between components. Using them effectively enhances component reusability and maintainability.
-
-

@@ -1,15 +1,22 @@
-const Sidebardata=[
+import propsexample from "./pages/props";
+import conditionalrender from "./pages/conditionalrender";
 
+const Sidebardata = [
+  {
+    title: "Dashboard",
+    path: "/",
+  },
+  {
+    title: "Props",
+    path: "/props",
+    component: propsexample,
+  },
 
-      {
-            "title":"Dashboard",
-            "path":"/"
-      },
-      {
-            "title":"Props",
-            "path":"/props"
-      }
+  {
+    title: "Condionalrender",
+    path: "/Condionalrender",
+    component: conditionalrender,
+  },
 ];
-
 
 export default Sidebardata;
