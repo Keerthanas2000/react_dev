@@ -15,8 +15,10 @@
 }
 
 .nav-item {
-  padding: 15px;
+  padding-left: 15px;
+  padding-top: 15px;
   color: rgb(255, 255, 255);
+  width: 94%;
 }
 
 .nav-item a {
@@ -28,9 +30,8 @@
 }
 
 .nav-item a.active {  
-  background: #fafafa;
+  background: #5ebcab;
   display: block;
-  width: 100%;
 }
   
 .content {
