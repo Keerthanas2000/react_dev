@@ -1,7 +1,7 @@
 import { Routes, Route, NavLink } from "react-router-dom";
 import "./App.css";
 import Sidebardata from "./Sidebar";
-
+import DashboardLayout from "./dashboard";
 
 function App() {
   return (
@@ -25,18 +25,20 @@ function App() {
       {/* Main Content Section */}
       <div className="content">
         <Routes>
-          {/* Default Home Route */}
-          <Route path="/" element={<h1>Welcome to React Dashboard</h1>} />
-          {/* The <Routes> component inside the .content div is responsible for handling the URL changes and rendering the corresponding components dynamically. */}
+          {/* Layout Route wrapping all child pages */}
+          <Route  path="/" element={<DashboardLayout />}>
+            {/* Default child route for "/" */}
+            <Route index element={<h3>Select a page from sidebar</h3>} />
 
-          {/* Dynamic Route Handling */}
-          {Sidebardata.map((i, index) => (
-            <Route
-              key={index}
-              path={i.path}
-              element={<i.component Mainpage={`Navigated to ${i.title}`} />}
-            />
-          ))}
+            {/* Dynamic Routes from Sidebar */}
+            {Sidebardata.map((i, index) => (
+              <Route
+                key={index}
+                path={i.path.replace("/", "")} // nested path should not have "/"
+                element={<i.component Mainpage={`Navigated to ${i.title}`} />}
+              />
+            ))}
+          </Route>
         </Routes>
       </div>
     </div>
@@ -44,6 +46,13 @@ function App() {
 }
 
 export default App;
+
+
+// defining two different routes with the same path /, which is causing the problem. React Router will only use the last one declared, so the first <Route path="/" ...> is overridden by the second. */}
+
+/* The <Routes> component inside the .content div is responsible for handling the URL changes and rendering the corresponding components dynamically. */
+
+
 
 // # Understanding Props in React
 
