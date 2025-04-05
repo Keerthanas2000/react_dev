@@ -48,6 +48,21 @@ function App() {
 export default App;
 
 
+// In Short
+// DashboardLayout is the parent route for all pages.
+
+// <Outlet /> inside it displays child components.
+
+// Child components are generated dynamically from Sidebardata.
+
+// When a user clicks a sidebar link:
+
+// The URL changes
+
+// React Router matches the child route
+
+// Renders the correct child component inside DashboardLayout via <Outlet />
+
 // defining two different routes with the same path /, which is causing the problem. React Router will only use the last one declared, so the first <Route path="/" ...> is overridden by the second. */}
 
 /* The <Routes> component inside the .content div is responsible for handling the URL changes and rendering the corresponding components dynamically. */
