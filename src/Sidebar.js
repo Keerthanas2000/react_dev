@@ -3,6 +3,7 @@ import conditionalrender from "./pages/conditionalrender";
 import RoutingExample from "./pages/routing";
 import BasicHooksPage from "./pages/Hooks/Basicpage";
 import UsestateExample from "./pages/Hooks/ALLHOOKS/usestate";
+import UseeffectFunc from "./pages/Hooks/ALLHOOKS/useeffect";
 const Sidebardata = [
   {
     title: "Dashboard",
@@ -40,6 +41,14 @@ const Sidebardata = [
     path: "/usestateexample",
 
     component: UsestateExample,
+  },
+
+  {
+    title: "Useeffect Example",
+
+    path: "/UseeffectFunc",
+
+    component: UseeffectFunc,
   },
 ];
 
