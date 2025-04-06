@@ -2,6 +2,7 @@ import propsexample from "./pages/props";
 import conditionalrender from "./pages/conditionalrender";
 import RoutingExample from "./pages/routing";
 import BasicHooksPage from "./pages/Hooks/Basicpage";
+import UsestateExample from "./pages/Hooks/ALLHOOKS/usestate";
 const Sidebardata = [
   {
     title: "Dashboard",
@@ -31,6 +32,14 @@ const Sidebardata = [
     path: "/basichooks",
 
     component: BasicHooksPage,
+  },
+
+  {
+    title: "Usestate Example",
+
+    path: "/usestateexample",
+
+    component: UsestateExample,
   },
 ];
 
