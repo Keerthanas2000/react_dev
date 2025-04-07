@@ -5,6 +5,12 @@ import BasicHooksPage from "./pages/Hooks/Basicpage";
 import UsestateExample from "./pages/Hooks/ALLHOOKS/usestate";
 import UseeffectFunc from "./pages/Hooks/ALLHOOKS/useeffect";
 import UseContextfunc from "./pages/Hooks/ALLHOOKS/usecontext";
+
+import Usereducerfunc from "./pages/Hooks/ALLHOOKS/usereducer";
+import UseReffunc from "./pages/Hooks/ALLHOOKS/useref";
+import Usecallbackfunc from "./pages/Hooks/ALLHOOKS/usecallback";
+
+import UseMemofunc from "./pages/Hooks/ALLHOOKS/usememo";
 const Sidebardata = [
   {
     title: "Dashboard",
@@ -59,6 +65,41 @@ const Sidebardata = [
 
     component: UseContextfunc,
   },
+
+
+  
+  {
+    title: "Use reducer Example",
+
+    path: "/usereducerfunc",
+
+    component: Usereducerfunc,
+  },
+
+
+  {
+    title: "Use ref Example",
+
+    path: "/useref",
+
+    component: UseReffunc,
+  },
+
+
+  {
+    title: "Use Callback Example",
+
+    path: "/usecallback",
+
+    component: Usecallbackfunc,
+  }
+  ,{
+    title: "Usememo Example",
+
+    path: "/usememo",
+
+    component: UseMemofunc,
+  }
 ];
 
 export default Sidebardata;
