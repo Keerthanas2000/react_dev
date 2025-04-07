@@ -4,6 +4,7 @@ import RoutingExample from "./pages/routing";
 import BasicHooksPage from "./pages/Hooks/Basicpage";
 import UsestateExample from "./pages/Hooks/ALLHOOKS/usestate";
 import UseeffectFunc from "./pages/Hooks/ALLHOOKS/useeffect";
+import UseContextfunc from "./pages/Hooks/ALLHOOKS/usecontext";
 const Sidebardata = [
   {
     title: "Dashboard",
@@ -49,6 +50,14 @@ const Sidebardata = [
     path: "/UseeffectFunc",
 
     component: UseeffectFunc,
+  },
+
+  {
+    title: "UseContext Example",
+
+    path: "/usecontextfunc",
+
+    component: UseContextfunc,
   },
 ];
 
