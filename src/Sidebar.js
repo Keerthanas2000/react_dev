@@ -11,6 +11,8 @@ import UseReffunc from "./pages/Hooks/ALLHOOKS/useref";
 import Usecallbackfunc from "./pages/Hooks/ALLHOOKS/usecallback";
 
 import UseMemofunc from "./pages/Hooks/ALLHOOKS/usememo";
+
+import CounterComponent from "./pages/Hooks/ALLHOOKS/customcomponent";
 const Sidebardata = [
   {
     title: "Dashboard",
@@ -99,6 +101,16 @@ const Sidebardata = [
     path: "/usememo",
 
     component: UseMemofunc,
+  }
+  
+
+
+  ,{
+    title: "Custom hook",
+
+    path: "/customhook",
+
+    component: CounterComponent,
   }
 ];
 
