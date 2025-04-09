@@ -13,6 +13,13 @@ import Usecallbackfunc from "./pages/Hooks/ALLHOOKS/usecallback";
 import UseMemofunc from "./pages/Hooks/ALLHOOKS/usememo";
 
 import CounterComponent from "./pages/Hooks/ALLHOOKS/customcomponent";
+
+import Lcycleclass from "./pages/Reactlifecycle";
+
+import React9 from "./pages/Hooks/statefullandstateless/basicpage";
+import HOCFUNC from "./pages/HOC/basicpage";
+
+import ReduxApp from "./pages/Redux/ReduxApp";
 const Sidebardata = [
   {
     title: "Dashboard",
@@ -111,6 +118,40 @@ const Sidebardata = [
     path: "/customhook",
 
     component: CounterComponent,
+  },
+
+
+  
+  {
+    title: "Lifecycle class",
+
+    path: "/lifecycleclass",
+
+    component: Lcycleclass,
+  },
+
+
+  {
+    title: "Statefull and Stateless",
+
+    path: "/userpage",
+
+    component: React9,
+  },
+  {
+    title: "HOC FUNC",
+
+    path: "/hoc",
+
+    component: HOCFUNC,
+  },
+
+  {
+    title: "ReduxApp",
+
+    path: "/ReduxApp",
+
+    component: ReduxApp,
   }
 ];
 
